@@ -28,7 +28,6 @@ public class LoginPage {
     @BeforeClass
     public void setUp() {
         System.out.println("started");
-       // System.setProperty("webdriver.chrome.driver", "C:/driver/chromedriver-win64");
         WebDriverManager.chromedriver().getWebDriver();
         System.out.println("chrome");
        driver = new ChromeDriver();
@@ -44,7 +43,6 @@ public class LoginPage {
 
     @Given("I have entered the username and password")
     public void i_have_entered_the_username_and_password() throws InterruptedException {
-       // loginPageTarget=new LoginPageTarget(driver);
         System.out.println("i_have_entered_the_username_and_password");
         Thread.sleep(5000);
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
